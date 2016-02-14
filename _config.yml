@@ -14,7 +14,7 @@ description: > # this means to ignore newlines until "baseurl:"
   angularJS and other frameworks.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: dpt21
+twitter_username: dafpt21
 github_username:  dafyddPrys
 
 # Build settings

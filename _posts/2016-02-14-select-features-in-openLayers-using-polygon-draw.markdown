@@ -6,13 +6,13 @@ date:   2016-02-10 22:11:43 +0000
 
 I recently started looking at openLayers 3 for research purposes at work. This was my first experience of using a mapping API and I was very impressed. There are loads of examples of what you can achieve with openLayers 3 on the website. I was really surprised by how easy it was to create what I thought would be complex features.
 
-What I want to show is a how to use the ol.interaction.Draw interaction to draw a polygon and select all features within it.
+What I want to show is a how to use the `ol.interaction.Draw` interaction to draw a polygon and select all features within it.
 
 ## Step 0: Set up a working environment 
 
 So that you can play along, we will set up this example in a plunker. Starting with a new plunk, open the libraries tab and search for “openlayers”. Add the openLayers 3+ library to your index.html page. This will add something like the following two lines to your html file (I updated my links to use version 3.11.2 here)
 
-One morething to note — I have changed the link to the javascript file to have “ol-debug.js” rather than just “ol.js” — this will give you the un-minified library which will give more useful variable names when debugging.
+One morething to note — I have changed the link to the javascript file to have `ol-debug.js` rather than just `ol.js` — this will give you the un-minified library which will give more useful variable names when debugging.
 
 <script src="https://gist.github.com/dafyddPrys/6909bc60b690159584ae.js"></script>
 
@@ -30,7 +30,8 @@ In the script.js file of your plunk, add the following:
 
 <script src="https://gist.github.com/dafyddPrys/f6f57a1a09e9682e5567.js"></script>
 
-Some comments on this: the baseLayer and view objects don’t really need to by globally declared. I just separated them out for clarity here. For more information on how to set up a basic openLayers map, read this quick start guide.
+Some comments on this: the baseLayer and view objects don’t really need to by globally declared. I just separated them out for clarity here. For more information on how to set up a basic openLayers map, [read this quick start guide.](http://openlayers.org/en/v3.0.0/doc/quickstart.html)
+
 
 Whats going on? Well, we’ve created a new tile layer and set the source as as a new OpenStreetMap source object. Then we’ve created a view object and set a default location and zoom level. We then added this view object as the view for the map object and added the tile layer onto the map as the baseLayer.
 
@@ -38,7 +39,7 @@ If you run this now you should get a map looking at the south of the UK.
 
 ## Step 2: Add some features 
 
-So now we have a map. We need some features! With openLayers, you can import features in geoJSON format. To make some sample data, use the geoJSON generator at geojson.io. I used point features in my example and I cannot guarantee that the selection behaviours for other types of features will work with my example, so I recommend using point features only. I also recommend making all of your point features around the UK, unless you like scrolling a lot.
+So now we have a map. We need some features! With openLayers, you can import features in geoJSON format. To make some sample data, use the [geoJSON generator at geojson.io](http://geojson.io/#map=2/20.0/0.0). I used point features in my example and I cannot guarantee that the selection behaviours for other types of features will work with my example, so I recommend using point features only. I also recommend making all of your point features around the UK, unless you like scrolling a lot.
 
 Once you’re done, copy the geoJSON code, create a new file called something like “points.json” in your plunk and paste the copied code into the file.
 
@@ -46,7 +47,7 @@ Next we need to add this new feature data to a layer on the map. So we will make
 
 <script src="https://gist.github.com/dafyddPrys/a7faf290b844a2e2751b.js"></script>
 
-So we make a new ol.layer.Vector object and set the source to be an ol.source.Vector object with a url property of the name of our json file. We also specify what format our feature data is in. Finally, we will need to add this layer to the map by adding it in the init function. The updated init function is below:
+So we make a new `ol.layer.Vector` object and set the source to be an `ol.source.Vector` object with a url property of the name of our json file. We also specify what format our feature data is in. Finally, we will need to add this layer to the map by adding it in the `init` function. The updated init function is below:
 
 <script src="https://gist.github.com/dafyddPrys/0f2d33c843643cd9e582.js"></script>
 
@@ -56,7 +57,7 @@ Now when you run the plunk you should be able to see your features appear in the
 
 So we have a layer with our map tiles and we have a layer with our imported point features. We will now make another layer which will hold our drawings and also a vector source object to hold our drawing points.
 
-Under the init(); call, add the new drawing layer and source object:
+Under the `init();` call, add the new drawing layer and source object:
 
 <script src="https://gist.github.com/dafyddPrys/b5758000b74d3873cd93.js"></script>
 
@@ -72,7 +73,7 @@ If you run this now, you should be able to draw polygons by holding Ctrl/Cmd and
 
 Now all the open layers functionality is in place! We now need to add the logic so that when a polygon is finished, it goes and checks which points from the pointsLayer are inside the polygon and selects the points if they are.
 
-The ol.interaction.Draw interaction has handy listeners for when drawing starts and end. We will use them both to manage our drawing.
+The `ol.interaction.Draw` interaction has handy listeners for when drawing starts and end. We will use them both to manage our drawing.
 
 First, we only want to be able to draw one polygon at a time. Therefore we have to clear the previous drawing when we start a new one.
 
@@ -82,9 +83,9 @@ How do we make the selectedFeatures actually selected? For this, we need to add 
 
 <script src="https://gist.github.com/dafyddPrys/13c5e2e54e7366a88665.js"></script>
 
-By adding this interaction, we can then pull the ol.Collection (a beefed up array) of the selected Features and then add to this programatically.
+By adding this interaction, we can then pull the `ol.Collection` (a beefed up array) of the selected Features and then add to this programatically.
 
-Next, add the logic for the “drawstart” and “drawend” events:
+Next, add the logic for the `drawstart` and `drawend` events:
 
 <script src="https://gist.github.com/dafyddPrys/64414198ed34c069e836.js"></script>
 
@@ -113,8 +114,10 @@ And that’s the basics! If you run this now, you should be able to draw a polyg
 
 You can always do more. Below I will show the steps to add some functionality, such as updating which points are selected as you draw and being able to modify the polygon after it is created (and updating the selected features as you go)
 
- ### Updating selected features in real time 
- 
+
+**Updating selected features in real time**
+
+
  You will notice that as you draw your polygon on the map, a white-faded area is created showing what counts as “inside” the polygon as you draw it. We can update the selection logic so that it updates which point features are selected as you draw. How exiting! This would give the user a better understanding of which features are being selected before they finish the polygon, reducing error rates and frustration.
 
 First, we will globally define a variable called “sketch” which will be our current drawing. Then we will add a listener to the geometry of this drawing, so that when the geometry changes, we will update the selected features. If you have gone through the code above, you will see that the sketch variable has already been defined. We therefore just need to add the listener. The updates to the “draw start” and “draw end” event handlers are shown in bold below:
@@ -123,7 +126,7 @@ First, we will globally define a variable called “sketch” which will be our 
 
 So we define sketch as the current drawing and then the listener function fires whenever the drawing changes. It cleares the selected features (so that features can be unselected) and checks which features are in the polygon again. We could abstract out the “test and push” functionality here as we’ve used it in a couple of places in an identical fashion. Anyway, running this now should select point features as you draw.
 
-### Modify the drawing and update the features 
+**Modify the drawing and update the features**
 
 It could be useful to allow the user to update their polygon after they’ve finished drawing it to allow for some fine tuning. We can add this functionality.
 
@@ -139,13 +142,17 @@ So we have pretty much exactly copied the logic from the “draw start” and �
 
 ## Places where I tripped up 
 
-Interaction.select overriding the“draw end” event I spent an embarrassingly long time being confused as to why my polygon was selecting features for only a fraction of a second. To see what I was experiencing, remove the “select.setActive(false)” and the “delaySelectActivate()” lines from the code and see how annoying it is.
+**Interaction.select overriding the“draw end” event**
+
+I spent an embarrassingly long time being confused as to why my polygon was selecting features for only a fraction of a second. To see what I was experiencing, remove the “select.setActive(false)” and the “delaySelectActivate()” lines from the code and see how annoying it is.
 
 I explained this above, but what was happening was the select interaction that we added was overriding the selection we make when we closed the polygon. Closing the polygon is done with a click and the select interaction uses a single click trigger as default. The browser checks for a single click by waiting 256ms after the click to make sure it is a single click. So what was happening for me was 256ms after closing the polygon, the select event triggered. No point features were being clicked on, so the selectedFeatures collection was emptied.
 
 We now deactivate the click events when we start drawing the polygon and reactivate it 300ms after the polygon is closed. Now it doesn’t mess with our polygon select functionality, but we can still use it if we want to!
 
-Using the polygon’s extent rather than the geometry To start with, when I wanted to check if the point features were inside my polygon, I was using the polygon’s extent via the getExtent() method. It looked something like this:
+**Using the polygon’s extent rather than the geometry** 
+
+To start with, when I wanted to check if the point features were inside my polygon, I was using the polygon’s extent via the getExtent() method. It looked something like this:
 
 <script src="https://gist.github.com/dafyddPrys/6d3de7a0bbb91fde9516.js"></script>
 
@@ -157,6 +164,6 @@ The result was a check like this:
 
 <script src="https://gist.github.com/dafyddPrys/456a0fe83f80a57a3a13.js"></script>
 
-As I mentioned before, a working plunker of all this is available here.
+As I mentioned before, a working plunker of all this is available [here](http://embed.plnkr.co/kSFZb9/).
 
-Thanks for reading!
+## Thanks for reading!

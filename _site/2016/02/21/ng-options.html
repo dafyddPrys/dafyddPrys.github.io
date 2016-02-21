@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Dafydd Prys</title>
-  <meta name="description" content="Web development blog where I keep notes of aspects of development that I  find interesting. I tend to explore things around javascript, especially angularJS and other frameworks.
-">
+  <title>ng-options with disabled flag</title>
+  <meta name="description" content="Since February 2015, we can set options in an ng-options attribute to be disabled based on a condition. This commit shows the chages in the angular code base.">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://yourdomain.com/">
+  <link rel="canonical" href="http://yourdomain.com/2016/02/21/ng-options.html">
   <link rel="alternate" type="application/rss+xml" title="Dafydd Prys" href="http://yourdomain.com/feed.xml">
 </head>
 
@@ -55,33 +54,29 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">ng-options with disabled flag</h1>
+    <p class="post-meta"><time datetime="2016-02-21T17:46:00+00:00" itemprop="datePublished">Feb 21, 2016</time></p>
+  </header>
 
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Feb 21, 2016</span>
+  <div class="post-content" itemprop="articleBody">
+    <p>Since February 2015, we can set options in an ng-options attribute to be disabled based on a condition. <a href="https://github.com/angular/angular.js/commit/91061e443fba7aa10ce78279c90e331571ef3ac4?diff=unified">This commit shows the chages in the angular code base.</a></p>
 
-        <h2>
-          <a class="post-link" href="/2016/02/21/ng-options.html">ng-options with disabled flag</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Feb 10, 2016</span>
+<p>An example of this would be:</p>
 
-        <h2>
-          <a class="post-link" href="/2016/02/10/select-features-in-openLayers-using-polygon-draw.html">Selecting features by drawing polygons in openLayers 3</a>
-        </h2>
-      </li>
-    
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-
+<div class="highlighter-rouge"><pre class="highlight"><code>'ng-options': 'o.value as o.name disable when o.unavailable for o in options'
+</code></pre>
 </div>
+
+<p>This means we do NOT have to write our own directive or some custom solution to get options in a dropdown dynamically disabled/enables, <a href="http://stackoverflow.com/questions/16202254/ng-options-with-disabled-rows/33875459#33875459">like some more popular stackOverflow answers suggest.</a></p>
+
+<p><a href="http://plnkr.co/edit/1nQtATwQlhWKmiWARDVP">I have made a plunk with an example of this functionality here.</a></p>
+
+  </div>
+
+</article>
 
       </div>
     </div>

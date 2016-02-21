@@ -6,9 +6,30 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 14 Feb 2016 18:20:38 +0000</pubDate>
-    <lastBuildDate>Sun, 14 Feb 2016 18:20:38 +0000</lastBuildDate>
+    <pubDate>Sun, 21 Feb 2016 19:27:40 +0000</pubDate>
+    <lastBuildDate>Sun, 21 Feb 2016 19:27:40 +0000</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
+    
+      <item>
+        <title>ng-options with disabled flag</title>
+        <description>&lt;p&gt;Since February 2015, we can set options in an ng-options attribute to be disabled based on a condition. &lt;a href=&quot;https://github.com/angular/angular.js/commit/91061e443fba7aa10ce78279c90e331571ef3ac4?diff=unified&quot;&gt;This commit shows the chages in the angular code base.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;An example of this would be:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&#39;ng-options&#39;: &#39;o.value as o.name disable when o.unavailable for o in options&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This means we do NOT have to write our own directive or some custom solution to get options in a dropdown dynamically disabled/enables, &lt;a href=&quot;http://stackoverflow.com/questions/16202254/ng-options-with-disabled-rows/33875459#33875459&quot;&gt;like some more popular stackOverflow answers suggest.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://plnkr.co/edit/1nQtATwQlhWKmiWARDVP&quot;&gt;I have made a plunk with an example of this functionality here.&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 21 Feb 2016 17:46:00 +0000</pubDate>
+        <link>http://yourdomain.com/2016/02/21/ng-options.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2016/02/21/ng-options.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Selecting features by drawing polygons in openLayers 3</title>

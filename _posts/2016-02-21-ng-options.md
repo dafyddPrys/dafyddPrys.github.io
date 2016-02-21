@@ -13,3 +13,16 @@ An example of this would be:
 This means we do NOT have to write our own directive or some custom solution to get options in a dropdown dynamically disabled/enables, [like some more popular stackOverflow answers suggest.](http://stackoverflow.com/questions/16202254/ng-options-with-disabled-rows/33875459#33875459)
 
 [I have made a plunk with an example of this functionality here.](http://plnkr.co/edit/1nQtATwQlhWKmiWARDVP)
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74116129-1', 'auto');
+  ga('send', 'pageview');
+
+</script>

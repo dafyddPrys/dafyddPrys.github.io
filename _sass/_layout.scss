@@ -2,9 +2,11 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
+    background-color: $brand-color;
+    color: $background-color;
+    border-bottom: 5px solid $brand-secondary-color;
     min-height: 56px;
+    text-transform: uppercase;
 
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -20,7 +22,7 @@
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: $background-color;
     }
 }
 
@@ -33,7 +35,7 @@
     }
 
     .page-link {
-        color: $text-color;
+        color: $background-color;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the last one
@@ -50,6 +52,7 @@
         border: 1px solid $grey-color-light;
         border-radius: 5px;
         text-align: right;
+
 
         .menu-icon {
             display: block;
@@ -81,6 +84,7 @@
         }
 
         .page-link {
+            color:$text-color;
             display: block;
             padding: 5px 10px;
 

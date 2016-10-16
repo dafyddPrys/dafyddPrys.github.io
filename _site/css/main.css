@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,900");
 /**
  * Reset some basic elements
  */
@@ -11,7 +12,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 400 16px/1.5 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #111;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
@@ -60,16 +61,18 @@ li > ol {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400; }
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 18px; }
 
 /**
  * Links
  */
 a {
-  color: #2a7ae2;
+  color: #E30B5D;
   text-decoration: none; }
   a:visited {
-    color: #1756a9; }
+    color: #9a073f; }
   a:hover {
     color: #111;
     text-decoration: underline; }
@@ -148,9 +151,11 @@ pre {
  * Site header
  */
 .site-header {
-  border-top: 5px solid #424242;
-  border-bottom: 1px solid #e8e8e8;
+  background-color: #E30B5D;
+  color: #fdfdfd;
+  border-bottom: 5px solid #30CA73;
   min-height: 56px;
+  text-transform: uppercase;
   position: relative; }
 
 .site-title {
@@ -161,7 +166,7 @@ pre {
   margin-bottom: 0;
   float: left; }
   .site-title, .site-title:visited {
-    color: #424242; }
+    color: #fdfdfd; }
 
 .site-nav {
   float: right;
@@ -169,7 +174,7 @@ pre {
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #111;
+    color: #fdfdfd;
     line-height: 1.5; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 20px; }
@@ -202,6 +207,7 @@ pre {
         display: block;
         padding-bottom: 5px; }
       .site-nav .page-link {
+        color: #111;
         display: block;
         padding: 5px 10px;
         margin-left: 20px; }
@@ -455,3 +461,16 @@ pre {
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+#chat-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+#chat-window {
+  width: 300px;
+  min-height: 500px;
+  position: relative; }

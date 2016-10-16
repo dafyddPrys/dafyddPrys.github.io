@@ -1,0 +1,15 @@
+#chat-container {
+  position:relative;
+
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#chat-window {
+  width:300px;
+  min-height:500px;
+  position:relative;
+}

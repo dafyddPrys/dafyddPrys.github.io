@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dafydd Prys</title>
-    <description>Web development blog where I keep notes of aspects of development that I  find interesting. I tend to explore things around javascript, especially angularJS and other frameworks.
+    <description>Web development blog where I keep notes of aspects of development that I find interesting. I tend to explore things around javascript, especially angularJS and other frameworks.
 </description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 21 Feb 2016 19:27:40 +0000</pubDate>
-    <lastBuildDate>Sun, 21 Feb 2016 19:27:40 +0000</lastBuildDate>
+    <link>http://dafyddprys.github.io/</link>
+    <atom:link href="http://dafyddprys.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 16 Oct 2016 10:43:47 +0100</pubDate>
+    <lastBuildDate>Sun, 16 Oct 2016 10:43:47 +0100</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
     
       <item>
@@ -23,10 +23,22 @@
 &lt;p&gt;This means we do NOT have to write our own directive or some custom solution to get options in a dropdown dynamically disabled/enables, &lt;a href=&quot;http://stackoverflow.com/questions/16202254/ng-options-with-disabled-rows/33875459#33875459&quot;&gt;like some more popular stackOverflow answers suggest.&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://plnkr.co/edit/1nQtATwQlhWKmiWARDVP&quot;&gt;I have made a plunk with an example of this functionality here.&lt;/a&gt;&lt;/p&gt;
+
+&lt;script&gt;
+  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
+
+  ga(&#39;create&#39;, &#39;UA-74116129-1&#39;, &#39;auto&#39;);
+  ga(&#39;send&#39;, &#39;pageview&#39;);
+
+&lt;/script&gt;
+
 </description>
         <pubDate>Sun, 21 Feb 2016 17:46:00 +0000</pubDate>
-        <link>http://yourdomain.com/2016/02/21/ng-options.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2016/02/21/ng-options.html</guid>
+        <link>http://dafyddprys.github.io/2016/02/21/ng-options.html</link>
+        <guid isPermaLink="true">http://dafyddprys.github.io/2016/02/21/ng-options.html</guid>
         
         
       </item>
@@ -186,10 +198,22 @@
 &lt;p&gt;As I mentioned before, a working plunker of all this is available &lt;a href=&quot;http://embed.plnkr.co/kSFZb9/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;thanks-for-reading&quot;&gt;Thanks for reading!&lt;/h2&gt;
+
+&lt;script&gt;
+  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
+
+  ga(&#39;create&#39;, &#39;UA-74116129-1&#39;, &#39;auto&#39;);
+  ga(&#39;send&#39;, &#39;pageview&#39;);
+
+&lt;/script&gt;
+
 </description>
         <pubDate>Wed, 10 Feb 2016 22:11:43 +0000</pubDate>
-        <link>http://yourdomain.com/2016/02/10/select-features-in-openLayers-using-polygon-draw.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2016/02/10/select-features-in-openLayers-using-polygon-draw.html</guid>
+        <link>http://dafyddprys.github.io/2016/02/10/select-features-in-openLayers-using-polygon-draw.html</link>
+        <guid isPermaLink="true">http://dafyddprys.github.io/2016/02/10/select-features-in-openLayers-using-polygon-draw.html</guid>
         
         
       </item>

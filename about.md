@@ -4,11 +4,16 @@ title: Who am i
 permalink: /about/
 ---
 
-I'm a web developer based in Bath, UK.
+I'm a web developer based in Bath and Bristol, UK. Born and bred in Wales.
 
-[You can see various, mostly unfinished projects of mine on my github](https://github.com/dafyddPrys)
+I work at [Play Sports Network](http://playsportsnetwork.com), building tools to support the growth of [Global Cycling Network](https://www.youtube.com/user/globalcyclingnetwork) and [Global Mountain Bike Network](https://www.youtube.com/user/globalmtb).
 
-[Some of my posts on here have accompanying plunks, which are on my plunker account](http://plnkr.co/users/dafyddPrys)
+&nbsp;
+&nbsp;
+
+[Lots of unfinished projects on github](https://github.com/dafyddPrys)
+
+[Plunks, without comment](http://plnkr.co/users/dafyddPrys)
 
 
 <script>

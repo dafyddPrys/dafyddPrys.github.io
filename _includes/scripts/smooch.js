@@ -3,8 +3,8 @@ Smooch.init({
   embedded: true,
   customText : {
     headerText : 'Talk to me!',
-    introductionText : 'Ask me about my experience or the type of work that I\'m interested in. ',
-    intoAppText : 'Message me below or use one of these other platforms.'
+    introductionText : 'Talk to my surrogate! He likes to talk about how great I am.',
+    intoAppText : 'Click an icon to chat using another platform.'
   }
 
 });

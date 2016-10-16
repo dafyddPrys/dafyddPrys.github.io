@@ -1,6 +1,11 @@
 /**
  * Site header
  */
+
+ .mini-header {
+   width:100%;
+   border-bottom: 5px solid $brand-color;
+ }
 .site-header {
     background-color: $brand-color;
     color: $background-color;
@@ -243,4 +248,36 @@
             font-size: 18px;
         }
     }
+}
+
+/**
+* Profile
+*/
+
+.profile {
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: $spacing-unit;
+
+}
+
+.profile-image {
+  margin: $spacing-unit 0;
+  max-height:300px;
+  border: $spacing-unit solid $brand-secondary-color;
+}
+
+.profile-title {
+  color: $brand-color;
+
+}
+
+.profile-link {
+  @extend .page-link;
+  text-transform: uppercase;
+  margin-bottom:10px;
+  font-size: $large-font-size;
+
 }

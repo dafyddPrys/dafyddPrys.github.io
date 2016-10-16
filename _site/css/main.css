@@ -74,7 +74,7 @@ a {
   a:visited {
     color: #9a073f; }
   a:hover {
-    color: #111;
+    color: #30CA73;
     text-decoration: underline; }
 
 /**
@@ -150,6 +150,10 @@ pre {
 /**
  * Site header
  */
+.mini-header {
+  width: 100%;
+  border-bottom: 5px solid #E30B5D; }
+
 .site-header {
   background-color: #E30B5D;
   color: #fdfdfd;
@@ -173,10 +177,10 @@ pre {
   line-height: 56px; }
   .site-nav .menu-icon {
     display: none; }
-  .site-nav .page-link {
+  .site-nav .page-link, .site-nav .profile-link {
     color: #fdfdfd;
     line-height: 1.5; }
-    .site-nav .page-link:not(:last-child) {
+    .site-nav .page-link:not(:last-child), .site-nav .profile-link:not(:last-child) {
       margin-right: 20px; }
   @media screen and (max-width: 600px) {
     .site-nav {
@@ -206,12 +210,12 @@ pre {
       .site-nav:hover .trigger {
         display: block;
         padding-bottom: 5px; }
-      .site-nav .page-link {
+      .site-nav .page-link, .site-nav .profile-link {
         color: #111;
         display: block;
         padding: 5px 10px;
         margin-left: 20px; }
-        .site-nav .page-link:not(:last-child) {
+        .site-nav .page-link:not(:last-child), .site-nav .profile-link:not(:last-child) {
           margin-right: 0; } }
 
 /**
@@ -320,6 +324,29 @@ pre {
     @media screen and (max-width: 800px) {
       .post-content h4 {
         font-size: 18px; } }
+
+/**
+* Profile
+*/
+.profile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px; }
+
+.profile-image {
+  margin: 30px 0;
+  max-height: 300px;
+  border: 30px solid #30CA73; }
+
+.profile-title {
+  color: #E30B5D; }
+
+.profile-link {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 18px; }
 
 /**
  * Syntax highlighting styles

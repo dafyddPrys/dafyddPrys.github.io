@@ -1,10 +1,19 @@
 ---
-layout: default
+layout: without-header
 ---
 
 <div class="home">
 
-  <img class="profile-image" src="{% include icon-github.html username=site.github_username %}">
+  <div class="profile">
+    <img class="profile-image" src="{{ "/img/profile.jpg" | prepend: site.baseurl }}">
+    <h1 class="profile-title post-title">{{site.title}}</h1>
+    {% for my_page in site.pages %}
+      {% if my_page.title %}
+      <a class="profile-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
+
 
   <h1 class="page-heading">Posts</h1>
 
@@ -19,8 +28,6 @@ layout: default
       </li>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
 

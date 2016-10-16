@@ -8,7 +8,9 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-
+html, body {
+  height:100%;
+}
 
 /**
  * Basic styling
@@ -23,6 +25,11 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+}
+
+.page-wrapper {
+  min-height:100%;
+  position:relative;
 }
 
 
@@ -197,12 +204,12 @@ pre {
 
     > svg {
         display: inline-block;
-        width: 16px;
-        height: 16px;
+        width: 32px;
+        height: 32px;
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
+            fill: $background-color;
         }
     }
 }

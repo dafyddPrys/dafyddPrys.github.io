@@ -107,69 +107,32 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    border-top: 5px solid $brand-secondary-color;
+    background-color: $brand-color;
     padding: $spacing-unit 0;
-}
+    color: $background-color;
 
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
-}
+    position: absolute;
+    bottom:0;
+    width:100%;
 
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
-}
-
-.footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
-}
-
-.footer-col {
-    float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-}
-
-.footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
-
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+    a, a:visited {
+      color:$background-color;
     }
 }
 
-@include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
+.footer-row {
+  width:100%;
+
+  display:flex;
+  align-items: center;
+  justify-content:space-around;
+
+
 }
+
+
+
 
 
 
@@ -178,6 +141,7 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    padding-bottom:100px;
 }
 
 .page-heading {
@@ -185,6 +149,7 @@
 }
 
 .post-list {
+    margin-bottom: 2 * $spacing-unit;
     margin-left: 0;
     list-style: none;
 
@@ -210,6 +175,14 @@
  */
 .post-header {
     margin-bottom: $spacing-unit;
+
+    a {
+      color: $background-color;
+
+      &:visited {
+        color: $background-color;
+      }
+    }
 }
 
 .post-title {
@@ -265,9 +238,10 @@
 
 .profile-image {
   margin: $spacing-unit 0;
-  height:500px;
-  // max-height:300px;
+  width:50%;
+  max-width: 280px;
   border: $spacing-unit solid $brand-secondary-color;
+
 }
 
 .profile-title {

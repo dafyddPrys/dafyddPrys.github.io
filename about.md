@@ -11,6 +11,12 @@ I work at [Play Sports Network](http://playsportsnetwork.com), building tools to
 &nbsp;
 &nbsp;
 
+If you want to reach out to me or think I could be of use on a project or idea you have, **please** reach out to me on my email in the footer.
+
+&nbsp;
+&nbsp;
+
+
 [Lots of unfinished projects on github](https://github.com/dafyddPrys)
 
 [Plunks, without comment](http://plnkr.co/users/dafyddPrys)

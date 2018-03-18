@@ -10,11 +10,9 @@ title: Dafydd Prys
 email: daf.p.thomas@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Web development blog where I keep notes of aspects of development that I
-  find interesting. I tend to explore things around javascript, especially
-  angularJS and other frameworks.
+  find interesting.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://dafyddprys.github.io" # the base hostname & protocol for your site
-twitter_username: dafpt21
 github_username:  dafyddPrys
 
 # Build settings

@@ -4,14 +4,12 @@ title: Who am i
 permalink: /about/
 ---
 
-I'm a web developer based in Bath and Bristol, UK. Born and bred in Wales.
-
-I work at [Play Sports Network](http://playsportsnetwork.com), building tools to support the growth of [Global Cycling Network](https://www.youtube.com/user/globalcyclingnetwork) and [Global Mountain Bike Network](https://www.youtube.com/user/globalmtb).
+I'm a web developer based in the UK. Born and bred in Wales.
 
 &nbsp;
 &nbsp;
 
-If you want to reach out to me or think I could be of use on a project or idea you have, **please** reach out to me on my email in the footer.
+If you want to reach out to me or think I could be of use on a project or idea you have, reach out to me on my email in the footer.
 
 &nbsp;
 &nbsp;

@@ -6,11 +6,10 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Dafydd Prys
+title: dprys
 email: daf.p.thomas@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Web development blog where I keep notes of aspects of development that I
-  find interesting.
+  Disorganised notes
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://dafyddprys.github.io" # the base hostname & protocol for your site
 github_username:  dafyddPrys
